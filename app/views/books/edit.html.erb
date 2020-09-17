@@ -1,0 +1,38 @@
+<%= link_to("<-- Back to Book Collection", root_path, :class => 'back-link') %>
+
+<div class="book edit">
+  <h2>Update Book</h2>
+
+  <%= form_for(@book, :url => book_path(@book), :method => 'patch') do |f| %>
+
+    <table summary="Book form fields">
+      <tr>
+        <th>Title</th>
+        <td><%= f.text_field(:title) %></td>
+      </tr>
+      <tr>
+        <th>Author</th>
+        <td><%= f.text_field(:author) %></td>
+      </tr>
+      <tr>
+        <th>Genre</th>
+        <td><%= f.select(:genre, options_for_select([['Children', 'Children'], ['Faith', 'Faith'], ['Fiction', 'Fiction'], ['Non-Fiction', 'Non-Fiction'], ['Autobiography', 'Autobiography'], ['Sci-Fi', 'Sci-Fi'], ['Horror', 'Horror'], ['Romance', 'Romance']])) %></td>
+      </tr>
+      <tr>
+        <th>Price</th>
+        <td><%= f.number_field(:price) %></td>
+      </tr>
+      <tr>
+        <th>Published Date</th>
+        <td><%= f.date_field(:published_date) %></td>
+      </tr>
+    </table>
+
+    <div class="form-buttons">
+      <%= f.submit("Update Book") %>
+    </div>
+
+  <% end %>
+</div>
+
+<%# <%= form_for(@book, :url => {:controller => 'books', :action => 'update', :id => @book.id}, :method => 'patch') do |f| %>
