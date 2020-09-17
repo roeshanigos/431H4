@@ -1,0 +1,17 @@
+current directory: /Users/ishanigos/Sites/book/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.8/ext/bootsnap
+/Users/ishanigos/.rbenv/versions/2.7.1/bin/ruby -I /Users/ishanigos/.rbenv/versions/2.7.1/lib/ruby/site_ruby/2.7.0 -r ./siteconf20200911-52445-1hyv7ae.rb extconf.rb
+creating Makefile
+
+current directory: /Users/ishanigos/Sites/book/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.8/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/ishanigos/Sites/book/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.8/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+warning: unknown warning option '-Wmisleading-indentation'; did you mean '-Wbinding-in-condition'? [-Wunknown-warning-option]
+1 warning generated.
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/ishanigos/Sites/book/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.8/ext/bootsnap
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20200911-52445-11fw84x/bootsnap
